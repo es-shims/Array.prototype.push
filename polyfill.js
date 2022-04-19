@@ -48,11 +48,17 @@ module.exports = function getPolyfill() {
 		return implementation;
 	}
 
+	var inf = { length: Infinity };
+	try {
+		$ArrayPrototype.call(inf);
+		return implementation;
+	} catch (e) { /**/ }
+
 	if (hasPropertyDescriptors) {
-		var array = [];
-		DefinePropertyOrThrow(array, 'length', { '[[Writable]]': false });
+		var nonwritable = [];
+		DefinePropertyOrThrow(nonwritable, 'length', { '[[Writable]]': false });
 		try {
-			array.push();
+			nonwritable.push();
 			return implementation;
 		} catch (e) { /**/ }
 	}

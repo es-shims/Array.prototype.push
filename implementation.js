@@ -20,7 +20,7 @@ var splitString = boxedString[0] !== 'a' || !(0 in boxedString);
 var strSplit = callBound('String.prototype.split');
 var $TypeError = GetIntrinsic('%TypeError%');
 
-var MAX_SAFE_INTEGER = Math.pow(2, 53);
+var MAX_SAFE_INTEGER_MINUS_1 = Math.pow(2, 53) - 1;
 
 /*
  *var pushShim = function push(item) {
@@ -43,8 +43,8 @@ module.exports = function push(item) {
 	var len = LengthOfArrayLike(self); // step 2
 
 	var argCount = arguments.length; // step 3
-	if (len + argCount > MAX_SAFE_INTEGER) {
-		throw new $TypeError('TODO'); // step 4
+	if ((len + argCount) > MAX_SAFE_INTEGER_MINUS_1) {
+		throw new $TypeError('Pushing ' + argCount + ' elements on an array-like of length ' + len + ' is disallowed, as the total surpasses 2**53-1'); // step 4
 	}
 
 	forEach(arguments, function (E) {

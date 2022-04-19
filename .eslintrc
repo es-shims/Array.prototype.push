@@ -28,6 +28,7 @@
 		{
 			"files": "test/**",
 			"rules": {
+				"func-style": 0,
 				"max-len": 0,
 				"max-lines-per-function": 0,
 				"no-invalid-this": 1,
