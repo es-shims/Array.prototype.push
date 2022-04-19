@@ -4,6 +4,9 @@ var GetIntrinsic = require('get-intrinsic');
 
 var IsArray = require('es-abstract/2021/IsArray');
 var HasOwnProperty = require('es-abstract/2021/HasOwnProperty');
+var DefinePropertyOrThrow = require('es-abstract/2021/DefinePropertyOrThrow');
+
+var hasPropertyDescriptors = require('has-property-descriptors')();
 
 var callBind = require('call-bind');
 
@@ -43,6 +46,15 @@ module.exports = function getPolyfill() {
 	}());
 	if (pushUndefinedIsWeird) {
 		return implementation;
+	}
+
+	if (hasPropertyDescriptors) {
+		var array = [];
+		DefinePropertyOrThrow(array, 'length', { '[[Writable]]': false });
+		try {
+			array.push();
+			return implementation;
+		} catch (e) { /**/ }
 	}
 
 	return $ArrayPrototype.push;

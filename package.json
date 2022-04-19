@@ -69,6 +69,7 @@
 		"define-properties": "^1.1.4",
 		"es-abstract": "^1.19.5",
 		"get-intrinsic": "^1.1.1",
+		"has-property-descriptors": "^1.0.0",
 		"is-string": "^1.0.7"
 	},
 	"testling": {

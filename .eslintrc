@@ -11,6 +11,7 @@
 		"new-cap": [2, {
 			"capIsNewExceptions": [
 				"GetIntrinsic",
+				"DefinePropertyOrThrow",
 				"HasOwnProperty",
 				"IsArray",
 				"LengthOfArrayLike",

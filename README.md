@@ -19,6 +19,7 @@ Because `Array.prototype.push` depends on a receiver (the “this” value), the
 
 Note: this list is not exhaustive.
 
+  - in node/chrome (including node 18): `push` fails to throw on a nonwritable `length` property
   - IE 8 and below, and pre-ES6 engines: `deleteCount` isn't defaulted to `length - start` until ES6
   - Safari 5.0: sometimes it returns `undefined`
   - Safari 7/8: sparse arrays of size 1e5 or greater break
