@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.2](https://github.com/es-shims/Array.prototype.push/compare/v1.0.1...v1.0.2) - 2022-04-19
+
+### Commits
+
+- [Fix] proper error when pushing above max array length [`27e2f6c`](https://github.com/es-shims/Array.prototype.push/commit/27e2f6c58c129c5e4f9dcdbef9e352be681e3eb6)
+- [Dev Deps] update `functions-have-names` [`63f7ccc`](https://github.com/es-shims/Array.prototype.push/commit/63f7ccc94951dc3574fabb1b86e313ad6c41f97d)
+
 ## [v1.0.1](https://github.com/es-shims/Array.prototype.push/compare/v1.0.0...v1.0.1) - 2022-04-19
 
 ### Commits
