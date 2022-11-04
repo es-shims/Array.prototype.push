@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.3](https://github.com/es-shims/Array.prototype.push/compare/v1.0.2...v1.0.3) - 2022-11-03
+
+### Commits
+
+- [meta] use `npmignore` to autogenerate an npmignore file [`004f2ff`](https://github.com/es-shims/Array.prototype.push/commit/004f2ffb0f8051bd5e0118a6039113840d2312b7)
+- [Deps] update `es-abstract`, `get-intrinsic` [`67bf0bc`](https://github.com/es-shims/Array.prototype.push/commit/67bf0bc4a18cc2021af2a3df75c82b909731c4c9)
+- [actions] update rebase action to use reusable workflow [`7caf4bc`](https://github.com/es-shims/Array.prototype.push/commit/7caf4bc16a21254d126c37d982cfca3578113132)
+- [Dev Deps] update `aud`, `tape` [`2e0eac3`](https://github.com/es-shims/Array.prototype.push/commit/2e0eac309d544a7aafbc2488b860ab974aac581e)
+- [readme] include node 19 [`42db116`](https://github.com/es-shims/Array.prototype.push/commit/42db116515c90d2ffbac29018f249d2f156d1189)
+
 ## [v1.0.2](https://github.com/es-shims/Array.prototype.push/compare/v1.0.1...v1.0.2) - 2022-04-19
 
 ### Commits
