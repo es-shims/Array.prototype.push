@@ -2,10 +2,10 @@
 
 var GetIntrinsic = require('get-intrinsic');
 
-var LengthOfArrayLike = require('es-abstract/2022/LengthOfArrayLike');
-var Set = require('es-abstract/2022/Set');
-var ToObject = require('es-abstract/2022/ToObject');
-var ToString = require('es-abstract/2022/ToString');
+var LengthOfArrayLike = require('es-abstract/2023/LengthOfArrayLike');
+var Set = require('es-abstract/2023/Set');
+var ToObject = require('es-abstract/2023/ToObject');
+var ToString = require('es-abstract/2023/ToString');
 
 var forEach = require('es-abstract/helpers/forEach');
 
