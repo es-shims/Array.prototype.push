@@ -1,6 +1,6 @@
 'use strict';
 
-var has = require('has');
+var hasOwn = require('hasown');
 var supportsDescriptors = require('define-properties').supportsDescriptors;
 
 module.exports = function (push, t) {
@@ -9,7 +9,7 @@ module.exports = function (push, t) {
 		var result = push(arr, undefined);
 		st.equal(result, 1);
 		st.equal(arr.length, 1);
-		st.ok(has(arr, 0));
+		st.ok(hasOwn(arr, 0));
 		st.equal(arr[0], undefined);
 
 		st.end();
@@ -20,7 +20,7 @@ module.exports = function (push, t) {
 		var result = push(obj, undefined);
 		st.equal(result, 1);
 		st.equal(obj.length, 1);
-		st.ok(has(obj, 0));
+		st.ok(hasOwn(obj, 0));
 		st.equal(obj[0], undefined);
 
 		st.end();
@@ -42,7 +42,7 @@ module.exports = function (push, t) {
 			'push throws when length is nonwritable'
 		);
 
-		st.notOk(has(array, 0));
+		st.notOk(hasOwn(array, 0));
 		st.equal(array.length, 0);
 
 		st.end();
