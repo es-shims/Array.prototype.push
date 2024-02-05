@@ -1,7 +1,5 @@
 'use strict';
 
-var GetIntrinsic = require('get-intrinsic');
-
 var LengthOfArrayLike = require('es-abstract/2023/LengthOfArrayLike');
 var Set = require('es-abstract/2023/Set');
 var ToObject = require('es-abstract/2023/ToObject');
@@ -18,7 +16,7 @@ var boxedString = Object('a');
 var splitString = boxedString[0] !== 'a' || !(0 in boxedString);
 
 var strSplit = callBound('String.prototype.split');
-var $TypeError = GetIntrinsic('%TypeError%');
+var $TypeError = require('es-errors/type');
 
 var MAX_SAFE_INTEGER_MINUS_1 = Math.pow(2, 53) - 1;
 
