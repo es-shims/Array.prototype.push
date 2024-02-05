@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.5](https://github.com/es-shims/Array.prototype.push/compare/v1.0.4...v1.0.5) - 2024-02-04
+
+### Commits
+
+- [Deps] update `call-bind`, `define-properties`, `es-abstract`, `get-intrinsic`, `has-property-descriptors` [`2452e36`](https://github.com/es-shims/Array.prototype.push/commit/2452e36fafffe58543286eaab72833a31ec27ea2)
+- [Dev Deps] use `hasown` instead of `has` [`e0a838c`](https://github.com/es-shims/Array.prototype.push/commit/e0a838cb36434be818cf73b17b084cdbd3cda6f2)
+- [Dev Deps] update `aud`, `npmignore`, `tape` [`2eedd92`](https://github.com/es-shims/Array.prototype.push/commit/2eedd928444dc89a8c73ad15b7369fcab6ecddcc)
+- [Refactor] use `es-errors` where possible, so things that only need those do not need `get-intrinsic` [`75f7130`](https://github.com/es-shims/Array.prototype.push/commit/75f7130299df708479b5a9d69f131b6eb7dc47a8)
+- [Deps] update `get-intrinsic` [`090fc59`](https://github.com/es-shims/Array.prototype.push/commit/090fc5932b816ab35399ad78f43cf0beb3c0a870)
+- [Dev Deps] update `tape` [`c9a9234`](https://github.com/es-shims/Array.prototype.push/commit/c9a9234dcfad214b363ccf12d8542468b7618e40)
+
 ## [v1.0.4](https://github.com/es-shims/Array.prototype.push/compare/v1.0.3...v1.0.4) - 2023-08-28
 
 ### Commits
