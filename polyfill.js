@@ -2,9 +2,9 @@
 
 var GetIntrinsic = require('get-intrinsic');
 
-var IsArray = require('es-abstract/2023/IsArray');
-var HasOwnProperty = require('es-abstract/2023/HasOwnProperty');
-var DefinePropertyOrThrow = require('es-abstract/2023/DefinePropertyOrThrow');
+var IsArray = require('es-abstract/2024/IsArray');
+var HasOwnProperty = require('es-abstract/2024/HasOwnProperty');
+var DefinePropertyOrThrow = require('es-abstract/2024/DefinePropertyOrThrow');
 
 var hasPropertyDescriptors = require('has-property-descriptors')();
 

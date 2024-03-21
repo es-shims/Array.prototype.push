@@ -1,9 +1,9 @@
 'use strict';
 
-var LengthOfArrayLike = require('es-abstract/2023/LengthOfArrayLike');
-var Set = require('es-abstract/2023/Set');
+var LengthOfArrayLike = require('es-abstract/2024/LengthOfArrayLike');
+var Set = require('es-abstract/2024/Set');
 var ToObject = require('es-object-atoms/ToObject');
-var ToString = require('es-abstract/2023/ToString');
+var ToString = require('es-abstract/2024/ToString');
 
 var forEach = require('es-abstract/helpers/forEach');
 
